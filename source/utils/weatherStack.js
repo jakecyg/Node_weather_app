@@ -23,18 +23,11 @@ const weatherStack = (long, lat, callback) => {
         " degrees celsius in " +
         currentLocation +
         ". " +
-        "There is " +
         currentChanceOfRain +
-        "% chance of rain.";
-      // "Current weather status: " +
-      // currentWeather +
-      // "\nCurrently at " +
-      // currentLocation +
-      // " it is " +
-      // currentTemp +
-      // " degrees celsius outside with " +
-      // currentChanceOfRain +
-      // "% chance of rain.";
+        "% chance of rain with " +
+        body.current.humidity +
+        "% humidity.";
+      console.log(body);
       callback(undefined, response);
     }
   });
